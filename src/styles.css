@@ -1,1 +1,242 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: "Ubuntu Medium" ;
+    src: url("/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu Light" ;
+    src: url("/fonts/Ubuntu-Light.ttf") format("truetype");
+    font-weight: 200;
+}
+
+
+*{
+    font-family: "Ubuntu Medium", "Ubuntu Light" ;
+}
+
+:root {
+
+
+    /* Colors: */
+    --unnamed-color-46bccb: #46BCCB;
+    --unnamed-color-f5fcff: #F5FCFF;
+    --unnamed-color-8b8b8b: #8B8B8B;
+    --unnamed-color-434242: #434242;
+    --red_1_-ff5a84: #FF5A84;
+    --blue_1_-f0f6f9: #F0F6F9;
+    --blue_2_-8ddeee: #8DDEEE;
+    --blue_3_-27d6eb: #27D6EB;
+    --blue_4_-008bd4: #008BD4;
+    --blue_5_-133447: #133447;
+    --gray_1_-b8c4c8: #B8C4C8;
+    --gray_2_-d6d6d6: #D6D6D6;
+    --gray_3_-cccccc: #CCCCCC;
+    --gray_4_-9d9999: #9D9999;
+    --gray_5_-6c757d: #6C757D;
+    --yellow_1_-ffdd5f: #FFDD5F;
+    --yellow_2_-f8c845: #F8C845;
+    --yellow_3_-faba0a: #FABA0A;
+    --white_-ffffff: #FFFFFF;
+    --unnamed-color-20d6eb: #20D6EB;
+    --unnamed-color-123446: #123446;
+    --unnamed-color-23d6eb: #23D6EB;
+    
+    /* Font/text values */
+    --unnamed-font-family-ubuntu: Ubuntu ;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-size-12: 12px;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-56: 56px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-0-26: 0.26px;
+    --unnamed-line-spacing-16: 16px;
+    --unnamed-line-spacing-18: 18px;
+    --unnamed-line-spacing-22: 22px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-line-spacing-32: 32px;
+    --unnamed-line-spacing-64: 64px;
+    }
+    
+
+    
+    /* Character Styles */
+    .ubuntu-—-14pt-text {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_5_-133447);
+    }
+    .ubuntu-—-14pt-text {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_5_-133447);
+    }
+    .ubuntu-—-14pt-text {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_3_-27d6eb);
+    }
+    .unnamed-character-style-1 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--gray_4_-9d9999);
+    }
+    .ubuntu-—-12pt-inputs {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--gray_4_-9d9999);
+    }
+    .unnamed-character-style-2 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-16);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-123446);
+    }
+    .unnamed-character-style-3 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0-26);
+    color: var(--blue_5_-133447);
+    }
+    .unnamed-character-style-4 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--red_1_-ff5a84);
+    }
+    .ubuntu-—-16pt-inputs {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--gray_4_-9d9999);
+    }
+    .ubuntu-—-16pt-inputs {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_5_-133447);
+    }
+    .unnamed-character-style-5 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_4_-008bd4);
+    }
+    .unnamed-character-style-6 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_5_-133447);
+    }
+    .unnamed-character-style-7 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-23d6eb);
+    }
+    .unnamed-character-style-8 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--gray_5_-6c757d);
+    }
+    .unnamed-character-style-9 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-24);
+    line-height: var(--unnamed-line-spacing-32);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_5_-133447);
+    }
+    .unnamed-character-style-10 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--blue_5_-133447);
+    }
+    .unnamed-character-style-11 {
+    font-family: var(--unnamed-font-family-ubuntu);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-56);
+    line-height: var(--unnamed-line-spacing-64);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-20d6eb);
+    }
+
+
+
+
+
+@theme{
+    --color-primary: #27d6eb;
+    --color-secondary:  #F5FCFF;
+    --color-neutral:  #8B8B8B;
+    --color-yellow: #F8C845;
+    --color-dark-blue: #133447
+}
+
