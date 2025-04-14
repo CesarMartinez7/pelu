@@ -5,17 +5,18 @@
 @font-face {
     font-family: "Ubuntu Medium" ;
     src: url("/fonts/Ubuntu-Medium.ttf") format("truetype");
+    font-weight: 100;
 }
 
 @font-face {
     font-family: "Ubuntu Light" ;
     src: url("/fonts/Ubuntu-Light.ttf") format("truetype");
-    font-weight: 200;
+    font-weight: 900;
 }
 
 
 *{
-    font-family: "Ubuntu Medium", "Ubuntu Light" ;
+    font-family: "Ubuntu Light" ;
 }
 
 :root {
