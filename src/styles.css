@@ -252,14 +252,28 @@
 
 
 
-
 @theme{
     --color-primary: #27d6eb;
     --color-primarytwo: #20d6eb;
-    --color-secondary:  #F5FCFF;
+    --color-bluelight: #8DDEEE;
+    --color-secondary: #2febf7;
     --color-neutral:  #8B8B8B;
     --color-yellow: #F8C845;
+    --color-yellow2: #FCCC47;
     --color-dark-blue: #133447;
-    --color-yellowone: #ffdd5f
+    --color-yellowone: #ffdd5f;
+    --color-gray-one: #6C757D
 }
 
+
+.p-opacity{
+  @apply text-gray-one  text-center text-["16px"] font-semibold
+}
+
+.btn-yellow{
+  @apply w-[288px] h-[48px] bg-yellow text-dark-blue p-3 z-50 rounded-full
+}
+
+.btn-bluedark{
+  @apply block  w-[288px] h-[48px] bg-dark-blue text-white p-3 rounded-full
+}

@@ -9,5 +9,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  activate: boolean = false
+  indexActivate : number | string = 0
 
 }

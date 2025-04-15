@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, viewChild } from '@angular/core';
+import { ViewChild } from '@angular/core';
 
 interface RoutesType{
   name: string
+  id: string 
 }
 
 @Component({
@@ -12,13 +14,23 @@ interface RoutesType{
 })
 
 export class NavbarComponent {
+
+  
   routes: RoutesType[] = [
-    { name: "¿Por qué?" },
-    { name: "Nuestros planes" },
-    { name: "Club" },
-    { name: "¿Quieres más info?" },
-    { name: "Blog" },
-    { name: "Asistencias" }
+    { name: "¿Por qué?", id: "porque" },
+    { name: "Nuestros planes", id: "planes" },
+    { name: "Club" , id: "club"},
+    { name: "¿Quieres más info?", id: "moreinfo"  },
+    { name: "Blog", id: "blog" },
+    { name: "Asistencias", id: "asistencias" }
   ];
+
+  scrollToWhy(id: string = "porque") {
+    const el = document.getElementById(id);
+    console.log(el)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
   
 }
