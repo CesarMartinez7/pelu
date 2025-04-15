@@ -197,7 +197,7 @@
           </tr>
           <tr class="border-b border-gray-200">
             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex justify-between ">
-              <div>Coberturas</div>
+              <button class="bg-amber-300" (click)="activate = !activate" >Coberturas</button>
               <div>{{`▼`}}
               </div>
             </th>
@@ -208,8 +208,21 @@
             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
               ASISTENCIAS
             </th>
-            <!-- <td class="px-6 py-4">Black</td>
-            <td class="px-6 py-4 bg-gray-100">Accessories</td> -->
+            <div class="p-4">
+             
+              <div
+                [ngClass]="{
+                  'max-h-0 overflow-hidden': !activate,
+                  'max-h-96': activate
+                }"
+                class="transition-all duration-500 ease-in-out bg-blue-200 p-4 mt-2 rounded"
+              >
+                <p>
+                  Este es el texto desplegable con transición suave 🧈✨.
+                </p>
+              </div>
+            </div>
+            
             
           </tr>
           <tr class="border-b border-gray-200">
@@ -225,8 +238,11 @@
       </table>
     </div>
     
-
   </div>
+
+  
+
+
   <div>
     <div class="flex flex-col gap-4 mt-6">
       <button class="btn-yellow">COMPRA TU SEGURO</button>

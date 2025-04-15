@@ -174,6 +174,11 @@ Evento **submit**
 submit = "nombreFuncion()";
 ```
 
+## Clases dinamicas en Angular
+
+Primer hay que tener en cuenta en importar las directivas en tu documento o componente eso se hace con el `CommonModule`
+
+
 ## Templates
 
 En angular los templates son pedazos de codigo HTML que nos permite y nos sirve para escribir algunas caracteristicas de angular y no es necesario incluir etiquetas como `<body>` `<base>` `<html>` y se ignora la etiqueta `<script>` por seguridad, y esta definidos solo para definir la interfaz o diretris

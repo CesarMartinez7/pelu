@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-
+import { CommonModule } from '@angular/common';
 
 interface FormArray{
   label: string
@@ -10,7 +10,7 @@ interface FormArray{
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -32,4 +32,13 @@ export class HomeComponent {
     { label: "Numero de documento", type: "number" },
     { label: "Correo electrónico", type: "email" },
   ];
+
+  mostrar(){
+    window.alert("jdfjdsf")
+  }
+
+  handleClickActivate(){
+    this.activate = !this.activate
+  }
+
 };    
