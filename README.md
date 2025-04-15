@@ -543,3 +543,56 @@ app.component.html
 ```
 Remplazar `src` por `ngSrc`
 # pelu
+
+
+
+### Las Fuentes en 🅰ngular
+
+Las fuentes en angular se instalan exactamente igual, como si no hubiera un framework, yo al menos los trabaje desde el mismo `CSS` 
+
+__Ejemplo de uso CSS__
+
+
+```css
+
+/* Exactamente igual se instalan las fuentes en angular, Desde CSS */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Ubuntu" ;
+    src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: 600 ;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts.woff2') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu-Medium.ttf") format("truetype");
+
+  }
+```

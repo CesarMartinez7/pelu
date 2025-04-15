@@ -1,82 +1,155 @@
-<main class="w-full h-svh p-4 bg-primary max-h-svh|">
-    <app-navbar />
+<main class="w-full h-svh bg-primary relative overflow-hidden">
+  <app-navbar />
+  <div class="h-screen z-30">
     <img
       src="images/logo_SEGUROPULUDO_blanco.png"
       alt=""
-      style="position: relative; left: 708px; top: 58px"
+      class="absolute left-[708px] top-[123px]"
     />
+
     <img
-      style="
-        position: relative;
-        left: 444px;
-        top: -161px;
-        transition: none;
-        cursor: move;
-      "
       src="images/PERRO-GLOBOS.png"
       alt=""
+      class="absolute left-[444px] top-[161px] cursor-move"
     />
+
     <img
       src="images/nube.png"
-      alt="dsfsfd"
-      style="
-        position: absolute;
-        left: 165px;
-        top: -272px;
-        transition: none;
-        cursor: move;
-      "
+      alt="nube"
+      class="absolute left-[165px] top-[272px] cursor-pointer "
     />
+
     <img
       src="images/GATO-BLANCOv2-1.png"
       alt=""
-      style="position: relative; left: 498px; top: -128px"
+      class="absolute left-[498px] top-[428px]"
     />
+
     <img
       src="images/Grupo37891.svg"
       alt=""
-      style="
-        position: relative;
-        left: 751px;
-        top: -318px;
-        transition: none;
-        cursor: move;
-      "
+      class="absolute left-[751px] top-[418px]"
     />
+
+    <img
+      src="images/nube.png"
+      alt=""
+      class="absolute left-[1450px] top-[212px]  duration-150 scale-125"
+    />
+
     <img
       src="images/kv_SEGUROPELUDO_Perro_Doberman.png"
-      style="position: relative; left: 1132px; top: -564px"
       alt=""
+      class="absolute left-[1200px] hidden md:block top-[334px]"
     />
-    <div class="w-full flex-col">
+
+    <img class="absolute" src="images/CACHORRO.png" alt="" style="left: 344px; top: 608px; transition: none; " >
+
+    <img src="images/GATO-CAFE Con sombra.png" class="absolute"  style="left: 1155px; top: 683px; width: 213px; height: 111px; " alt="">
+
+    <div class="w-full flex flex-col bg-cyan-500 absolute mt-12 ">
       <button
-        style="
-          position: relative;
-          left: 783px;
-          top: -569px;
-          width: 241.233px;
-          transition: none;
-          cursor: move;
-        "
-        class="bg-yellow rounded-full text-dark-blue p-3"
+        class="absolute w-[288px] h-[48px] bg-yellow text-dark-blue p-3 z-50 rounded-full"
+        style="left: 778px; top: 625px"
       >
         COMPRA TU SEGURO!
       </button>
       <button
-        style="
-          position: relative;
-          left: 544px;
-          top: -501px;
-          width: 240.05px;
-          transition: none;
-          cursor: move;
-        "
-        class="bg-dark-blue text-white p-3 rounded-full"
+        class="absolute w-[288px] h-[48px] bg-dark-blue text-white p-3 rounded-full"
+        style="left: 778px; top: 687px; transition: none; cursor: move"
       >
         CONOCE MAS
       </button>
     </div>
-  </main>
+  </div>
+</main>
 
-  <app-footer/>
+
+<!-- Vista dos  -->
+
+<div class="p-6 h-auto md:h-svh relative flex flex-col justify-center text-center overflow-hidden">
+  <div class="absolute  ">
+    <img src="images/Fondo punteado-1.png" class="-z-10 " alt="Fondo Punteado" style="position: relative; left: 1718px; top: -405px; width: 914px; height: 887px; transform: translate(-171px); transition: none; cursor: move;">
+  </div>
+
+  <div class="absolute overflow-hidden">
+    <img src="images/Fondo punteado-1.png" class="-z-10 " alt="Fondo Punteado2" style="left: -516px; top: 489px; position: relative; transition: none; cursor: move;" >
+  </div>
+
+
+  <h2 class="text-primarytwo text-center text-[28px] font-bold mb-16">
+    ¿Por qué Seguro Peludo?
+  </h2>
+  <!-- Imagenes aqui -->
   
+  <img
+      src="images/nube.png"
+      alt="nube"
+      class="absolute "
+      style="left: 196px; top: 153px; width: 137px; height: 134px; transition: none; cursor: move;"
+    />
+
+    <img
+      src="images/nube.png"
+      alt="nube"
+      class="absolute"
+      style="left: 1464px; top: 393px; transition: none; cursor: move;"
+    />
+
+
+   <div class="flex justify-center ">
+  <div class="grid grid-cols-1 w-[900px] md:grid-cols-3 gap-6 place-items-center place-content-center  ">
+    <!-- Círculo 1 -->
+     <div class="h-[280px]">
+       <div class="bg-primary rounded-full w-[208px] h-[208px] overflow-hidden flex justify-center items-center mb-4.5">
+         <img src="images/PERRO-CONOv2.png" style="width: 139px; height: 131px; position: relative; left: 0px; top: 18px;" class="w-40 h-40 object-cover scale-200 " alt="Perro con cono">
+       </div>
+       <p class="text-[20px] text-dark-blue">Atención veterinaria</p>
+     </div>
+  
+    <!-- Círculo 2 -->
+
+    <div class="h-[280px]">
+      <div class="bg-yellowone rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
+        <img src="images/kv_SEGUROPELUDO_baño-burbujas.png" class="w-40 h-40 scale-150 object-contain" alt="Baño de burbujas" style="position: relative; left: 1px; top: 40px; width: 191px; height: 172px; transition: none; cursor: move;" >
+        <p class="text-dark-blue text-[20px]"></p>
+      </div>
+      <p class="text-[20px] text-dark-blue">Servicios de guardería</p>
+    </div>
+
+  
+    <!-- Círculo 3 -->
+     <div class="h-[280px]">
+       <div class="bg-primary rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
+         <img src="images/gato-caja-2.png" class="w-40 h-40 object-contain scale-150" alt="Gato en caja" style="width: 220px; height: 197px; position: relative; left: 12px; top: 50px; transition: none; cursor: move;">
+       </div>
+       <p class="text-[20px] text-dark-blue">Servicios funerarios</p>
+     </div>
+  </div>
+</div>
+  
+  <div class="text-[#727b83] font-semibold">
+    <p class="my-4.5">
+      Estar preparado es la mejor forma de proteger la vida de quienes más
+      amamos.
+    </p>
+    <p>
+      Seguro Peludo te brinda cobertura en caso de que tu peludito necesite
+      asistencia profesional por enfermedad o accidente.
+    </p>
+    <p>
+      Además, incluye respaldo para responder ante terceros en caso de lesiones
+      o daños materiales ocasionados por tu mascota.
+    </p>
+  </div>
+  <div class="flex flex-col justify-center w-full items-center gap-4 mt-12 ">
+      <button class="w-[288px] h-[48px] bg-yellow text-dark-blue p-3 z-50 rounded-full">
+        VEAMOS LOS PLANES
+      </button>
+      <button class="bg-primary w-[288px] h-[48px] rounded-full ">
+        VER EBOOK
+      </button>
+  </div>
+</div>
+
+<app-footer />

@@ -1,22 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+
 @import "tailwindcss";
 
-
 @font-face {
-    font-family: "Ubuntu Medium" ;
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+ 
+  
+  @font-face {
+    font-family: "Ubuntu" ;
+    src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: 600 ;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts.woff2') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
     src: url("/fonts/Ubuntu-Medium.ttf") format("truetype");
-    font-weight: 100;
-}
 
-@font-face {
-    font-family: "Ubuntu Light" ;
-    src: url("/fonts/Ubuntu-Light.ttf") format("truetype");
-    font-weight: 900;
-}
-
+  }
 
 *{
-    font-family: "Ubuntu Light" ;
+    font-family: "Ubuntu" ;
 }
 
 :root {
@@ -235,9 +255,11 @@
 
 @theme{
     --color-primary: #27d6eb;
+    --color-primarytwo: #20d6eb;
     --color-secondary:  #F5FCFF;
     --color-neutral:  #8B8B8B;
     --color-yellow: #F8C845;
-    --color-dark-blue: #133447
+    --color-dark-blue: #133447;
+    --color-yellowone: #ffdd5f
 }
 
