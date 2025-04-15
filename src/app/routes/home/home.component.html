@@ -1,9 +1,9 @@
-<!-- <app-navbar /> -->
+<app-navbar /> 
 <main class="w-full md:flex  flex-col justify-center items-center bg-primary overflow-hidden">
   <div class="h-screen" >
     <div class="flex justify-center md:block items-center  mt-32 flex-col">
-      <div class="mt-[60vh] h-[40vh] bg-secondary -z-40 absolute md:block">
-
+      <div class="mt-[60vh] w-full h-[40vh] bg-secondary inset-0 z-0 absolute ">
+          
       </div>
       <img
         src="images/logo_SEGUROPULUDO_blanco.png"
@@ -14,6 +14,7 @@
           src="images/Grupo37891.svg"
           alt=""
           class="block md:absolute left-[751px] top-[418px]"
+          style="left: 802px; top: 455px; width: 357px; height: 159.867px; transform: translate(-45px, -23px); transition: none; cursor: move;"
         />
     </div>
 
@@ -26,19 +27,19 @@
     <img
       src="images/nube.png"
       alt="nube"
-      class="hidden md:absolute left-[165px] top-[272px] cursor-pointer "
+      class="hidden md:block md:absolute left-[165px] top-[322px] cursor-pointer "
     />
 
     <img
       src="images/GATO-BLANCOv2-1.png"
       alt=""
-      class="absolute left-[498px] hidden md:block top-[428px]"
+      class="absolute z-50 left-[498px] hidden md:block top-[428px]"
     />
 
     <img
       src="images/nube.png"
       alt=""
-      class="hidden md:absolute left-[1450px] top-[212px] duration-150 scale-125"
+      class="hidden md:absolute md:block left-[1450px] top-[212px] duration-150 scale-125"
     />
 
     <img
@@ -54,13 +55,13 @@
     <div class="w-full flex flex-col gap-3  mt-12 items-center justify-center ">
       <button
         class="block md:absolute btn-yellow"
-        style="left: 778px; top: 625px"
+        style="left: 800px; top: 623px; transition: none; cursor: move;"
       >
         COMPRA TU SEGURO!
       </button>
       <button
-        class="md:absolute btn-bluedark"
-        style="left: 778px; top: 687px; transition: none; cursor: move"
+        class="md:absolute block btn-bluedark z-20"
+        style="left: 804px; top: 687px; transition: none; cursor: move;"
       >
         CONOCE MAS
       </button>
@@ -72,46 +73,53 @@
 <!-- Vista dos  -->
 
 <div class="p-6 h-auto md:h-svh relative flex flex-col justify-center text-center overflow-hidden" id="porque" >
-  <div class="absolute  ">
-    <img src="images/Fondo punteado-1.png" class="-z-10 " alt="Fondo Punteado" style="position: relative; left: 1718px; top: -405px; width: 914px; height: 887px; transform: translate(-171px); transition: none; cursor: move;">
+ 
+  <div class="absolute">
+    <img
+      src="images/Fondo punteado-1.png"
+      alt="Fondo Punteado"
+      class="relative left-[1718px]  top-[-405px] w-[914px] h-[887px] -translate-x-[171px] -z-10 cursor-move"
+    />
   </div>
-
+  
   <div class="absolute overflow-hidden">
-    <img src="images/Fondo punteado-1.png" class="-z-10 " alt="Fondo Punteado2" style="position: relative;left: -616px; top: 489px; position: relative; transition: none; cursor: move;" >
+    <img
+      src="images/Fondo punteado-1.png"
+      alt="Fondo Punteado2"
+      class="relative left-[-616px] top-[489px] -z-10 cursor-move"
+    />
   </div>
+  
 
-
-  <h2 class="text-primarytwo text-center text-[28px] font-bold mb-36">
+  <h2 class="text-primarytwo text-center text-[28px] font-bold mb-12 md:mb-36">
     ¿Por qué Seguro Peludo?
   </h2>
   <!-- Imagenes aqui -->
   
-  <img
-      src="images/nube.png"
-      alt="nube"
-      class="absolute -z-10 "
-      style="left: 196px; top: 153px; width: 137px; height: 134px; transition: none; cursor: move;"
-    />
+      <img
+        src="images/nube.png"
+        alt="nube"
+        class="absolute hidden md:block left-[196px] top-[153px] w-[137px] h-[134px] -z-10 cursor-move"
+      />
+      
+      <img
+        src="images/nube.png"
+        alt="nube"
+        class="absolute hidden md:block left-[1464px] top-[393px] -z-10 cursor-move"
+      />
+      
+      <img
+        src="images/nube.png"
+        alt="nube"
+        class="absolute hidden md:block left-[152px] top-[700px] w-[114px] h-[116px] -z-10"
+      />
 
-    <img
-      src="images/nube.png"
-      alt="nube "
-      class="absolute -z-10"
-      style="left: 1464px; top: 393px; transition: none; cursor: move;"
-    />
-
-     <img
-      src="images/nube.png"
-      alt="nube"
-      class="absolute -z-10"
-      style="left: 152px; top: 700px; width: 114px; height: 116px;"
-    />
 
 
    <div class="flex justify-center  items-center flex-col ">
-  <div class="grid grid-cols-1 w-[900px] md:grid-cols-3 gap-6 place-items-center place-content-center  ">
+  <div class="grid grid-cols-1 w-[900px] md:grid-cols-3 gap-3 md:gap-6 place-items-center place-content-center  ">
     <!-- Círculo 1 -->
-     <div class="h-[280px] flex justify-center items-center flex-col">
+     <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
        <div class="bg-primary rounded-full w-[208px] h-[208px] overflow-hidden flex justify-center items-center mb-4.5">
          <img src="images/PERRO-CONOv2.png" style="width: 139px; height: 131px; position: relative; left: 0px; top: 18px;" class="w-40 h-40 object-cover scale-200 " alt="Perro con cono">
        </div>
@@ -119,7 +127,7 @@
      </div>
   
     <!-- Círculo 2 -->
-    <div class="h-[280px] flex justify-center items-center flex-col">
+    <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
       <div class="bg-yellowone rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
         <img src="images/kv_SEGUROPELUDO_baño-burbujas.png" class="w-40 h-40 scale-150 object-contain" alt="Baño de burbujas" style="position: relative; left: 1px; top: 40px; width: 191px; height: 172px; transition: none; cursor: move;" >
         <p class="text-dark-blue text-[20px]"></p>
@@ -129,7 +137,7 @@
 
   
     <!-- Círculo 3 -->
-     <div class="h-[280px] flex justify-center items-center flex-col">
+     <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
        <div class="bg-primary rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
          <img src="images/gato-caja-2.png" class="w-40 h-40 object-contain scale-150" alt="Gato en caja" style="width: 220px; height: 197px; position: relative; left: 12px; top: 50px; transition: none; cursor: move;">
        </div>
@@ -228,13 +236,13 @@
   </div>
 </div>
 
-<div class="h-auto md:h-svh w-full min-w-full max-h-full flex justify-center items-center flex-col gap-4" id="club">
-  <h3 class="text-dark-blue text-[28px] text-center mb-22 ">¿Un seguro que te abre las puertas a un CLUB?</h3>
+<div class="h-auto md:h-svh p-6 w-full min-w-full max-h-full flex justify-center items-center flex-col gap-4" id="club">
+  <h3 class="text-dark-blue text-[28px] text-center mb-6 md:mb-22 ">¿Un seguro que te abre las puertas a un CLUB?</h3>
 
   <div class="flex justify-center ">
     <div class="grid grid-cols-1 w-[900px] md:grid-cols-3 gap-6 place-items-center place-content-center  ">
       <!-- Círculo 1 -->
-       <div class="h-[280px] flex justify-center items-center flex-col">
+       <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
          <div class="border-2 border-primary  rounded-full w-[208px] h-[208px] overflow-hidden flex justify-center items-center mb-4.5">
            <img src="images/DESCUENTO.png" style="width: 66px; height: 67px; position: relative; left: -4px; top: 1px; transition: none; cursor: move;" class="w-40 h-40 object-cover scale-200 " alt="Perro con cono">
          </div>
@@ -242,7 +250,7 @@
        </div>
     
       <!-- Círculo 2 -->
-      <div class="h-[280px] flex justify-center items-center flex-col">
+      <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
         <div class=" 
        border-primary border-2 rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
         <img src="images/moneda.png" class="w-40 h-40 scale-150 object-contain" alt="Descuentos" style="position: relative; left: 19px; top: 64px; width: 122px; height: 110px; transform: translate(0px, -32px); transition: none; cursor: move;" >
@@ -251,7 +259,7 @@
         <p class="text-[20px] text-dark-blue w-[176px] h-[48px] text-center">Precios especiales</p>
       </div>
       <!-- Círculo 3 -->
-       <div class="h-[280px] flex justify-center items-center flex-col">
+       <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
          <div class="border-primary  border-2 rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
            <img src="images/PERRO-GLOBOS.png" class="w-40 h-40 object-contain scale-150" alt="Perro globo" style="width: 200px; height: 172px; position: relative; left: -1px; top: -54px; transition: none; cursor: move;"  >
          </div>
@@ -260,8 +268,72 @@
     </div>
   </div>
 
-  <p class="p-opacity w-auto  h-[44px] mt-16">Con Seguro Peludo tienes acceso a un club de beneficios digitales en diferentes establecimientos del país; mejor dicho, beneficios que vas a poder convertir en experiencias únicas e inolvidables.</p>
-  <button class="btn-yellow mt-10">COMPRA TU SEGURO</button>
+  <p class="p-opacity  w-auto md:w-[944px]  h-[44px] md:mt-16">Con Seguro Peludo tienes acceso a un club de beneficios digitales en diferentes establecimientos del país; mejor dicho, beneficios que vas a poder convertir en experiencias únicas e inolvidables.</p>
+  <div class="mt-12">
+    <button class="btn-yellow mt-10">COMPRA TU SEGURO</button>
+  </div>
+</div>
+
+<div class="bg-primary    md:min-h-svh h-fit p-12 flex justify-center flex-col items-center">
+  <img src="images/logo_SEGUROPULUDO_blanco.png" alt="">
+  <h3 class="title mb-12 text-[24px] text-center">¡Estás a un paso de asegurar a tu bolita de pelos!</h3>
+
+  <img src="images/perro-grande-spa@2x.png" class="z-10 absolute" style="left: 1124px; top: 4028px; width: 672px; height: 616px; transition: none; cursor: move;"  alt="Perro en spatula">
+
+  <img src="images/Gato-Amarillo@2x.png" class="z-10 absolute"  style="left: 213px; top: 4143px; width: 654px; height: 369px; transform: translate(-70px, -36px); transition: none; cursor: move;" alt="Gato amarillo.com">
+
+  <div>
+    <form class="flex flex-col gap-3 z-30 w-[560px] justify-center items-center  ">
+      @for (item of formArray; track $index) {
+        <div class="bg-white flex flex-col z-30 w-[560px] h-[56px] py-2 px-4 rounded-md">
+          <label for="" class="text-primary text-xs font-light">{{item.label}}</label>
+          <input type="text" class=" outline-none text-dark-blue">
+        </div>
+      }
+
+      <fieldset>  
+        <div class="flex flex-col items-start gap-3 mt-4">
+          <label for="Option1" class="inline-flex items-start gap-3">
+            <div class="checkbox-wrapper-15">
+              <input class="inp-cbx" id="cbx-15" type="checkbox" style="display: none;"/>
+              <label class="cbx" for="cbx-15">
+                <span>
+                  <svg width="12px" height="9px" viewbox="0 0 12 9">
+                    <polyline points="1 5 4 8 11 1"></polyline>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div>
+              <p class="mt-0.5 text-sm text-white">
+                Acepto recibir comunicaciones comerciales y publicitarias personalizadas a través de los canales autorizados por Seguros Mundial.
+              </p>
+            </div>
+          </label>
+      
+          <label for="Option2" class="inline-flex items-start gap-3">
+            <div class="checkbox-wrapper-15">
+              <input class="inp-cbx" id="cbx-15" type="checkbox" style="display: none;"/>
+              <label class="cbx" for="cbx-15">
+                <span>
+                  <svg width="12px" height="9px" viewbox="0 0 12 9">
+                    <polyline points="1 5 4 8 11 1"></polyline>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div>
+              <p class="mt-0.5 text-sm text-white">
+                Autorizo el tratamiento de mis datos y acepto la <a href="" class="underline">Política de Tratamiento de Datos Personales</a> , así como los <a href="" class="underline">Terminos y condiciones</a>.
+              </p>
+            </div>
+          </label>
+        </div>
+      </fieldset>
+      <input type="submit" value="COMPRAR TU SEGURO" class="btn-yellow my-5"  >
+    </form>
+  </div>
+
 </div>
 
 <app-footer />
