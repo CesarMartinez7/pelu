@@ -4,49 +4,47 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { Signal } from '@angular/core';
 
-interface FormArray{
-  label: string
-  type: string
+interface FormArray {
+  label: string;
+  type: string;
 }
 
 @Component({
   selector: 'app-home',
   imports: [NavbarComponent, FooterComponent, CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  activate: boolean = false;
+  indexActivate: number | string = 0;
+  scrollingState = signal('activo');
 
-  activate: boolean = false
-  indexActivate : number | string = 0
-  scrollingState  = signal("activo")
-
-  scrolling(){
-    window.addEventListener("scroll",() => {
-      this.scrollingState.set("activo2")
-    })
+  scrolling() {
+    window.addEventListener('scroll', () => {
+      this.scrollingState.set('activo2');
+    });
   }
 
-  constructor(){
-    this.scrolling()
+  constructor() {
+    this.scrolling();
   }
 
   formArray: FormArray[] = [
-    { label: "Nombre del peludo", type: "text" },
-    { label: "Edad", type: "number" },
-    { label: "Mes", type: "text" },
-    { label: "Raza del peludito", type: "text" },
-    { label: "Primer nombre", type: "text" },
-    { label: "Segundo Nombre", type: "text" },
-    { label: "Primer apellido", type: "text" },
-    { label: "Segundo apellido", type: "text" },
-    { label: "Tipo de documento", type: "text" },
-    { label: "Numero de documento", type: "number" },
-    { label: "Correo electrónico", type: "email" },
+    { label: 'Nombre del peludo', type: 'text' },
+    { label: 'Edad', type: 'number' },
+    { label: 'Mes', type: 'text' },
+    { label: 'Raza del peludito', type: 'text' },
+    { label: 'Primer nombre', type: 'text' },
+    { label: 'Segundo Nombre', type: 'text' },
+    { label: 'Primer apellido', type: 'text' },
+    { label: 'Segundo apellido', type: 'text' },
+    { label: 'Tipo de documento', type: 'text' },
+    { label: 'Numero de documento', type: 'number' },
+    { label: 'Correo electrónico', type: 'email' },
   ];
 
-  handleClickActivate(){
-    this.activate = !this.activate
+  handleClickActivate() {
+    this.activate = !this.activate;
   }
-
-};    
+}

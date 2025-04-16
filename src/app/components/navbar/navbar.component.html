@@ -26,13 +26,13 @@
       >
         CONTÁCTANOS</a
       >
-      <button class="border border-white rounded-full text-md w-[200px] h-[36px]">
+      <button  class="border border-white rounded-full text-md w-[200px] h-[36px]" (click)="scrollToWhy(`compraseguro`)" >
         ¡COMPRA TU SEGURO!
       </button>
     </div>
   </nav>
   }@else {
-  <div class="p-2 flex justify-center">
+  <div class="p-2 flex justify-center items-center w-full">
     <img class="w-[108px] h-[24px]" src="images/logomundialblue.svg" alt="" />
   </div>
   } @if (isBig === "activo2") {
@@ -56,11 +56,11 @@
     <div class="flex gap-3">
       <a
         routerLink="/contact"
-        class="border flex items-center justify-center border-primary rounded-full text-md w-[144px] h-[36px]"
+        class="border flex items-center justify-center border-primary rounded-full text-md w-[144px] h-[36px]"   
       >
         CONTÁCTANOS</a
       >
-      <button class="btn-yellow-three w-[200px] h-[36px]">
+      <button class="btn-yellow-three w-[200px] h-[36px]"  (click)="scrollToWhy(`compraseguro`)"  >
         ¡COMPRA TU SEGURO!
       </button>
     </div>
