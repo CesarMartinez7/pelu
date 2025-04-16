@@ -177,7 +177,7 @@
     <h3 class="text-center text-[28px] text-dark-blue ">Nuestros planes</h3>
     <p class="text-center font-light text-dark-blue">Diseñamos pensando en la tranquilidad de tu peludo</p>
     <!-- TABLA AQUI -->
-    <!-- <div>
+     <div>
       <div class="relative shadow-md  bg-white w-full rounded-full ">
         <table class="text-sm text-left font-medium text-dark-blue bg-white w-[1102px] rounded-t-2xl">
           <thead class="text-xs text-dark-blue rounded-md text-[14px]">
@@ -185,7 +185,6 @@
               <th scope="col" class="px-6 py-3 bg-[#E1E6E6] w-8/12">Beneficios</th>
               <th scope="col" class="px-6 py-3 bg-bluelight text-center">Estándar</th>
               <th scope="col" class="px-6 py-3 bg-yellow2 text-center">Premium</th>
-              
             </tr>
           </thead>
           <tbody>
@@ -195,18 +194,19 @@
               </th>
               <td class="px-6 py-4">00.000.0000.000</td>
               <td class="px-6 py-4 ">00.000.0000.000</td>
-              
             </tr>
             <tr class="border-b border-gray-200">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex justify-between ">
-                <button class="bg-amber-300"  >Coberturas</button>
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex justify-between  ">
+                <button>COBERTURAS</button>
                 <div>{{`▼`}}
                 </div>
               </th>
-              
-              
             </tr>
-           
+            <tr class="border-b border-gray-200">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                ASISTENCIAS
+              </th>    
+            </tr>
             <tr class="border-b border-gray-200">
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
                 ASISTENCIAS OPCIONALES
@@ -217,7 +217,7 @@
         </table>
       </div>
       
-    </div> -->
+    </div> 
   
     
   
@@ -278,11 +278,11 @@
     <img src="images/Gato-Amarillo@2x.png" class="z-10 absolute hidden md:block"  style="left: 213px; top: 4143px; width: 654px; height: 369px; transform: translate(-70px, -36px); transition: none; cursor: move;" alt="Gato amarillo.com">
   
     <div>
-      <form class="flex flex-col gap-3 z-30 md:w-[560px] justify-center items-center  ">
+      <form [formGroup]="form" class="flex flex-col gap-3 z-30 md:w-[560px] justify-center items-center  ">
         @for (item of formArray; track $index) {
           <div class="bg-white flex flex-col z-30 md:w-[560px] w-full h-[56px] py-2 px-4 rounded-md">
             <label for="" class="text-primary text-xs font-light">{{item.label}}</label>
-            <input type="text" class=" outline-none text-dark-blue ">
+            <input [type]="`text`" [formControlName]="item.formname"  class=" outline-none text-dark-blue ">
           </div>
         }
   
@@ -325,7 +325,7 @@
             </label>
           </div>
         </fieldset>
-        <input type="submit" value="COMPRAR TU SEGURO" class="btn-yellow my-5"  >
+        <input type="submit" value="COMPRAR TU SEGURO" class="btn-yellow my-5" (click)="validarData()"  >
       </form>
     </div>
   
