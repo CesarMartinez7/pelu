@@ -1,4 +1,4 @@
-<app-navbar ngSkipHydration [isBig]="scrolling()" ></app-navbar>
+<app-navbar ngSkipHydration [isBig]="scrollingState()" ></app-navbar>
 <div  class="overflow-auto">
   <main  class="w-full md:flex  flex-col justify-center items-center bg-primary overflow-hidden">
     <div class="h-screen" >
@@ -101,19 +101,19 @@
         <img
           src="images/nube.png"
           alt="nube"
-          class="absolute animate-ping hidden md:block left-[196px] top-[153px] w-[137px] h-[134px] -z-10 cursor-move"
+          class="absolute animate-bounce hidden md:block left-[196px] top-[153px] w-[137px] h-[134px] -z-10 cursor-move"
         />
         
         <img
           src="images/nube.png"
           alt="nube"
-          class="absolute hidden md:block left-[1464px] top-[393px] -z-10 cursor-move"
+          class="absolute animate-bounce hidden md:block left-[1464px] top-[393px] -z-10 cursor-move"
         />
         
         <img
           src="images/nube.png"
           alt="nube"
-          class="absolute hidden md:block left-[152px] top-[700px] w-[114px] h-[116px] -z-10"
+          class="absolute animate-bounce     hidden md:block left-[152px] top-[700px] w-[114px] h-[116px] -z-10"
         />
   
   

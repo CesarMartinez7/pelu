@@ -278,6 +278,9 @@
   @apply  bg-yellow text-dark-blue p-3 z-50 rounded-full
 }
 
+.btn-yellow-three{
+  @apply  bg-yellow text-dark-blue  z-50 rounded-full
+}
 
 .btn-bluedark{
   @apply block  w-[288px] h-[48px] bg-dark-blue text-white p-3 rounded-full

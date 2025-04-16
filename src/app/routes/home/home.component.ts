@@ -16,11 +16,20 @@ interface FormArray{
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
   activate: boolean = false
   indexActivate : number | string = 0
-  scrolling = signal("activo")
+  scrollingState  = signal("activo")
 
+  scrolling(){
+    window.addEventListener("scroll",() => {
+      this.scrollingState.set("activo2")
+    })
+  }
 
+  constructor(){
+    this.scrolling()
+  }
 
   formArray: FormArray[] = [
     { label: "Nombre del peludo", type: "text" },
