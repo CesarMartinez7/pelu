@@ -402,5 +402,14 @@
 
 
 .popover{
-  @apply  p-4 w-[464px] h-[426px] rounded-[20px]
+  @apply p-4 w-[464px] h-[426px] rounded-[20px]
+}
+
+
+.swal2-html-container{
+  @apply text-dark-blue font-light text-sm
+}
+
+.popover-succes{
+  @apply w-[464px] h-[356px]
 }

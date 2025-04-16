@@ -10,10 +10,10 @@ import {
 
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
-
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-contact',
-  imports: [NavbarComponent, ReactiveFormsModule],
+  imports: [NavbarComponent, ReactiveFormsModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
@@ -45,18 +45,22 @@ export class ContactComponent {
         imageUrl: 'images/campana.png',
         customClass: {
           popup: 'popover',
-          title: 'title font-bold',
+          title: 'title font-extrabold',
           confirmButton: 'btn-yellow',
+          
         },
       });
     } else {
       Swal.fire({
-        title: 'Enviado con exito!',
+        title: '¡Correo enviado exitosamente!',
         icon: 'success',
+        confirmButtonText: "ENTENDIDO",
         draggable: true,
         customClass: {
           popup: 'popover',
           title: 'title',
+          confirmButton: "btn-yellow"
+        
         },
       });
     }

@@ -1,6 +1,6 @@
 <app-navbar ngSkipHydration  [isBig]="`desactivado`" />
 <div
-  
+
   class=" h-svh  bg-primary text-dark-blue flex items-center justify-center flex-col">
   <img src="images/logo_SEGUROPULUDO_blanco.png" class="" alt="" />
 
@@ -9,12 +9,7 @@
     class="absolute hidden md:block z-0 left-[171px] top-[451px] w-[524px] h-[293px] "
     alt="Foto gato amarillo cacorro"
   />
-  <img
-    src="images/perro-grande-spa@2x.png"
-    class="absolute hidden md:block left-[901px] -top-[20px] w-[577px] h-[521px]"
-    style="transform: translate(283px, 339px);"
-    alt="Dog Spa"
-  />
+  
 
 
   <form [formGroup]="formulario" class="flex flex-col gap-3 w-full md:w-[560px] p-3">
@@ -75,7 +70,7 @@
     <div
       class="bg-white p-4 rounded-br-full rounded-tr-full w-[208px] h-[80px]"
     >
-      <button class="border-2 rounded-full border-primary w-[176px] h-[48px]">
+      <button routerLink="/"  class="border-2 rounded-full border-primary w-[176px] h-[48px]">
         ATRAS
       </button>
     </div>

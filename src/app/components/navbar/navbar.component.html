@@ -14,14 +14,14 @@
       >
         @for (item of routes; track $index) {
         <li
-          class="px-2 justify-center items-center hover:border-b-2 duration-150"
+          class="px-2 justify-center items-center hover:border-b-2 border-10px transition-all border-w duration-150 hover:scale-105"
         >
           <button (click)="scrollToWhy(item.id)">{{ item.name }}</button>
         </li>
         }
       </ul>
       <div class="flex gap-3">
-        <a routerLink="/contact"   class="border border-white rounded-full text-md p-3">
+        <a routerLink="/contact" class="border border-white rounded-full text-md p-3">
           CONTÁCTANOS</a>
           <button class="border border-white rounded-full text-md p-3">
           ¡COMPRA TU SEGURO!

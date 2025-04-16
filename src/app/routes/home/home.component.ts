@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { Signal } from '@angular/core';
 
 interface FormArray{
   label: string
@@ -17,6 +18,8 @@ interface FormArray{
 export class HomeComponent {
   activate: boolean = false
   indexActivate : number | string = 0
+  scrolling = signal("activo")
+
 
 
   formArray: FormArray[] = [
@@ -32,8 +35,6 @@ export class HomeComponent {
     { label: "Numero de documento", type: "number" },
     { label: "Correo electrónico", type: "email" },
   ];
-
-
 
   handleClickActivate(){
     this.activate = !this.activate
