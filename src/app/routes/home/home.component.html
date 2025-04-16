@@ -1,8 +1,8 @@
-<app-navbar /> 
+<app-navbar ngSkipHydration></app-navbar>
 <main class="w-full md:flex  flex-col justify-center items-center bg-primary overflow-hidden">
   <div class="h-screen" >
     <div class="flex justify-center md:block items-center  mt-32 flex-col">
-      <div class="mt-[60vh] w-full h-[40vh] bg-secondary inset-0 z-0 absolute ">
+      <div class="mt-[60vh] w-full h-[40vh] md:block hidden bg-secondary inset-0 z-0 absolute ">
           
       </div>
       <img
@@ -13,8 +13,8 @@
         <img
           src="images/Grupo37891.svg"
           alt=""
-          class="block md:absolute left-[751px] top-[418px]"
-          style="left: 802px; top: 455px; width: 357px; height: 159.867px; transform: translate(-45px, -23px); transition: none; cursor: move;"
+          class=""
+          
         />
     </div>
 
@@ -135,7 +135,7 @@
       <p class="text-[20px] text-dark-blue w-[176px]">Servicios de guardería</p>
     </div>
 
-  
+
     <!-- Círculo 3 -->
      <div class=" h-fit md:h-[280px] flex justify-center items-center flex-col">
        <div class="bg-primary rounded-full w-[208px] h-[208px] flex justify-center items-center overflow-hidden mb-4.5">
@@ -175,7 +175,7 @@
   <h3 class="text-center text-[28px] text-dark-blue ">Nuestros planes</h3>
   <p class="text-center font-light text-dark-blue">Diseñamos pensando en la tranquilidad de tu peludo</p>
   <!-- TABLA AQUI -->
-  <div>
+  <!-- <div>
     <div class="relative shadow-md  bg-white w-full rounded-full ">
       <table class="text-sm text-left font-medium text-dark-blue bg-white w-[1102px] rounded-t-2xl">
         <thead class="text-xs text-dark-blue rounded-md text-[14px]">
@@ -197,48 +197,25 @@
           </tr>
           <tr class="border-b border-gray-200">
             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap flex justify-between ">
-              <button class="bg-amber-300" (click)="activate = !activate" >Coberturas</button>
+              <button class="bg-amber-300"  >Coberturas</button>
               <div>{{`▼`}}
               </div>
             </th>
             
             
           </tr>
-          <tr class="border-b border-gray-200">
-            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-              ASISTENCIAS
-            </th>
-            <div class="p-4">
-             
-              <div
-                [ngClass]="{
-                  'max-h-0 overflow-hidden': !activate,
-                  'max-h-96': activate
-                }"
-                class="transition-all duration-500 ease-in-out bg-blue-200 p-4 mt-2 rounded"
-              >
-                <p>
-                  Este es el texto desplegable con transición suave 🧈✨.
-                </p>
-              </div>
-            </div>
-            
-            
-          </tr>
+         
           <tr class="border-b border-gray-200">
             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
               ASISTENCIAS OPCIONALES
-            </th>
-            <!-- <td class="px-6 py-4">Gray</td>
-            <td class="px-6 py-4 bg-gray-100">Phone</td> -->
-            
+            </th>    
           </tr>
          
         </tbody>
       </table>
     </div>
     
-  </div>
+  </div> -->
 
   
 
@@ -294,16 +271,16 @@
   <img src="images/logo_SEGUROPULUDO_blanco.png" alt="">
   <h3 class="title mb-12 text-[24px] text-center">¡Estás a un paso de asegurar a tu bolita de pelos!</h3>
 
-  <img src="images/perro-grande-spa@2x.png" class="z-10 absolute" style="left: 1124px; top: 4028px; width: 672px; height: 616px; transition: none; cursor: move;"  alt="Perro en spatula">
+  <img src="images/perro-grande-spa@2x.png" class="z-10 absolute hidden md:block " style="left: 1124px; top: 4028px; width: 672px; height: 616px;"  alt="Perro en spatula">
 
-  <img src="images/Gato-Amarillo@2x.png" class="z-10 absolute"  style="left: 213px; top: 4143px; width: 654px; height: 369px; transform: translate(-70px, -36px); transition: none; cursor: move;" alt="Gato amarillo.com">
+  <img src="images/Gato-Amarillo@2x.png" class="z-10 absolute hidden md:block"  style="left: 213px; top: 4143px; width: 654px; height: 369px; transform: translate(-70px, -36px); transition: none; cursor: move;" alt="Gato amarillo.com">
 
   <div>
-    <form class="flex flex-col gap-3 z-30 w-[560px] justify-center items-center  ">
+    <form class="flex flex-col gap-3 z-30 md:w-[560px] justify-center items-center  ">
       @for (item of formArray; track $index) {
-        <div class="bg-white flex flex-col z-30 w-[560px] h-[56px] py-2 px-4 rounded-md">
+        <div class="bg-white flex flex-col z-30 md:w-[560px] w-full h-[56px] py-2 px-4 rounded-md">
           <label for="" class="text-primary text-xs font-light">{{item.label}}</label>
-          <input type="text" class=" outline-none text-dark-blue">
+          <input type="text" class=" outline-none text-dark-blue ">
         </div>
       }
 
@@ -351,6 +328,5 @@
   </div>
 
 </div>
-
 <app-footer />
 

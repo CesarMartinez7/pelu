@@ -1,29 +1,36 @@
-<header
-  class="px-12 flex flex-row bg-primary text-white w-full whitespace-nowrap fixed py-4 z-[999] shadow-md   "
->
-  <nav class="flex flex-row justify-between items-center w-full gap-8">
-    <div class="flex flex-row gap-4">
-      <div>
-        <img class="w-44" src="images/segurosmd.svg" alt="" />
+<header ngSkipHydration
+  [ngClass]="isBig === `activo` ? `bg-primary text-white` : `bg-white text-dark-blue`"
+  class="px-12 flex flex-row  text-white w-full whitespace-nowrap fixed py-4 z-[999] shadow-md"
+ >
+  @if (isBig === "activo") {
+    <nav class="flex flex-row justify-between items-center w-full gap-8">
+      <div class="flex flex-row gap-4">
+        <div>
+          <img class="w-44" src="images/segurosmd.svg" alt="" />
+        </div>
       </div>
-    </div>
-    <ul
-      class="flex flex-row gap-x-12 w-full text-white list-none justify-center text-lg"
-    >
-      @for (item of routes; track $index) {
-      <li
-        class="px-2 justify-center items-center hover:border-b-2 duration-150"
+      <ul
+        class="flex flex-row gap-x-12 w-full  list-none justify-center text-lg"
       >
-        <button (click)="scrollToWhy(item.id)">{{ item.name }}</button>
-      </li>
-      }
-    </ul>
-    <div class="flex gap-3">
-      <button class="border border-white rounded-full text-md p-3">
-        CONTÁCTANOS</button
-      ><button class="border border-white rounded-full text-md p-3">
-        ¡COMPRA TU SEGURO!
-      </button>
+        @for (item of routes; track $index) {
+        <li
+          class="px-2 justify-center items-center hover:border-b-2 duration-150"
+        >
+          <button (click)="scrollToWhy(item.id)">{{ item.name }}</button>
+        </li>
+        }
+      </ul>
+      <div class="flex gap-3">
+        <a routerLink="/contact"   class="border border-white rounded-full text-md p-3">
+          CONTÁCTANOS</a>
+          <button class="border border-white rounded-full text-md p-3">
+          ¡COMPRA TU SEGURO!
+        </button>
+      </div>
+    </nav>
+  }@else {
+    <div class="w-full p-2 flex justify-center">
+      <img class="w-[108px] h-[24px]" src="images/logomundialblue.svg" alt="" />
     </div>
-  </nav>
+  }
 </header>

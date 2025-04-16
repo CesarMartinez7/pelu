@@ -267,25 +267,39 @@
 
 
 .p-opacity{
-  @apply text-gray-one  text-center text-["16px"] font-semibold
+  @apply text-gray-one  text-center text-[16px] font-semibold
 }
 
 .btn-yellow{
   @apply w-[288px] h-[48px] bg-yellow text-dark-blue p-3 z-50 rounded-full
 }
 
+.btn-yellow-two{
+  @apply  bg-yellow text-dark-blue p-3 z-50 rounded-full
+}
+
+
 .btn-bluedark{
   @apply block  w-[288px] h-[48px] bg-dark-blue text-white p-3 rounded-full
+}
+
+
+.input-div{
+  @apply bg-white flex flex-col z-30 md:w-[560px]  w-full h-[56px] py-2 px-4 rounded-md 
+}
+
+.input-label{
+  @apply text-primary text-xs font-light
+}
+
+.input{
+  @apply outline-none text-dark-blue 
 }
 
 
 .title{
   @apply text-center text-[28px] text-dark-blue
 }
-
-
-
-
   .checkbox-wrapper-15 .cbx {
     -webkit-user-select: none;
     user-select: none;
@@ -380,3 +394,13 @@
     }
   }
 
+
+.container-full{
+  display:grid;
+  grid-template-columns: auto 1f auto;
+}
+
+
+.popover{
+  @apply  p-4 w-[464px] h-[426px] rounded-[20px]
+}

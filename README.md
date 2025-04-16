@@ -601,3 +601,36 @@ __Ejemplo de uso CSS__
 
   }
 ```
+
+### Navegacion sin Reload
+
+La navegacion en angular tmb depende de como estes utilizando los modules o en `standalone` modulos, si estas utilizando standalone es imporante tener en cuenta que si el html no te reconoce esa propiedad entonces necesitas importar RouterModule en ese component. Y al igual que en `react-router-dom` este cambio de paignas como tal no hace un reload o refresh en la pagina
+
+
+Ejemplo de etiqueta a sin recarga de pagina
+
+```html
+<a routerLink="/ruta_aqui" >Redireccion</a>
+```
+
+### Modales
+
+Para las modales en este proyecto estoy haciendo uso de la libreria Swal para que me cree las modales y no tener ese monton de modales de mal humor
+
+
+__Ejemplo de uso sencillo de la Libreria Swal y su metodo Fire__
+
+```ts
+import Swal from "sweetalert2"
+
+if (this.formulario.invalid) {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Por favor rellene los campos correctamente',
+        icon: 'error',
+        confirmButtonText: 'Cool',
+      });
+    } else:
+      // Logica aqui...
+```
+

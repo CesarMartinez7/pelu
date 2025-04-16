@@ -33,9 +33,7 @@ export class HomeComponent {
     { label: "Correo electrónico", type: "email" },
   ];
 
-  mostrar(){
-    window.alert("jdfjdsf")
-  }
+
 
   handleClickActivate(){
     this.activate = !this.activate

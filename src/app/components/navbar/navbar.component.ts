@@ -1,17 +1,19 @@
-import { Component, ElementRef, viewChild } from '@angular/core';
+import { Component, ElementRef, viewChild, Input, input } from '@angular/core';
 import { ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 interface RoutesType {
   name: string;
   id: string;
 }
 
-
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [RouterModule, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
+
 })
 export class NavbarComponent {
   routes: RoutesType[] = [
@@ -23,8 +25,9 @@ export class NavbarComponent {
     { name: 'Asistencias', id: 'asistencias' },
   ];
 
-
   
+  @Input() isBig : string = "activo"
+
   scrollToWhy(id: string = 'porque') {
     const el = document.getElementById(id);
     console.log(el);
